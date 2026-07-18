@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rotsch & Lorenz GbR</title>
+<meta name="description" content="Rotsch & Lorenz GbR entwickelt und betreibt digitale Software-Produkte und Web-Tools für verschiedene Alltags- und Geschäftsbereiche.">
+<style>
+  :root{
+    --bg:#0b0f14; --panel:#111823; --fg:#eef2f7; --muted:#9aa7b5; --accent:#3ddc97; --line:#1e2a38;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  header{position:sticky;top:0;background:rgba(11,15,20,.85);backdrop-filter:blur(8px);
+         border-bottom:1px solid var(--line);z-index:10}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-weight:700;letter-spacing:.2px}
+  .brand span{color:var(--accent)}
+  nav a{color:var(--muted);margin-left:22px;font-size:.95rem}
+  nav a:hover{color:var(--fg);text-decoration:none}
+  .hero{padding:96px 0 72px}
+  .eyebrow{color:var(--accent);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem}
+  h1{font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.1;margin:.5rem 0 1rem;letter-spacing:-.02em}
+  .lead{color:var(--muted);font-size:1.2rem;max-width:640px}
+  .cta{display:inline-block;margin-top:28px;padding:13px 24px;border-radius:12px;background:var(--accent);
+       color:#04120c;font-weight:700}
+  .cta:hover{text-decoration:none;filter:brightness(1.05)}
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-size:1.6rem;margin:0 0 8px;letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:640px;margin:0 0 28px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{margin:0 0 6px;font-size:1.05rem}
+  .card p{margin:0;color:var(--muted);font-size:.96rem}
+  .contact a{font-weight:600}
+  footer{border-top:1px solid var(--line);padding:44px 0;color:var(--muted);font-size:.9rem}
+  footer h2{font-size:1.1rem;color:var(--fg)}
+  .imp{max-width:640px}
+  .imp p{margin:.35rem 0}
+  .imp .label{color:var(--fg);font-weight:600;margin-top:1.1rem}
+  .fine{margin-top:28px;font-size:.82rem;opacity:.7}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">Rotsch &amp; Lorenz<span> GbR</span></div>
+    <nav><a href="#leistungen">Was wir machen</a><a href="#kontakt">Kontakt</a><a href="#impressum">Impressum</a></nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="eyebrow">Digitale Produkte</div>
+    <h1>Wir entwickeln Software, die alltägliche Probleme löst.</h1>
+    <p class="lead">Die Rotsch &amp; Lorenz GbR baut und betreibt digitale Produkte und Web-Tools für
+      verschiedene Nischen. Jedes Produkt bekommt seine eigene Marke, seine eigene Seite und einen klaren,
+      ehrlichen Nutzen.</p>
+    <a class="cta" href="#kontakt">Kontakt aufnehmen</a>
+  </div>
+
+  <section id="leistungen">
+    <div class="wrap">
+      <h2>Was wir machen</h2>
+      <p class="sub">Wir entwerfen, bauen und pflegen digitale Software-Produkte, von der Idee bis zum
+        laufenden Betrieb.</p>
+      <div class="grid">
+        <div class="card"><h3>Web-Tools</h3><p>Praktische Anwendungen, die konkrete Aufgaben im Alltag und
+          im Geschäft schneller und zuverlässiger machen.</p></div>
+        <div class="card"><h3>Digitale Produkte</h3><p>Software und digitale Güter mit klarem Nutzen,
+          erhältlich als Einmalkauf oder im Abo, mit sofortigem Zugang.</p></div>
+        <div class="card"><h3>Eigene Marken</h3><p>Jedes Produkt steht für sich, mit eigener Marke, eigener
+          Seite und einem ehrlichen Angebot, ohne leere Versprechen.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <div class="wrap">
+      <h2>Kontakt</h2>
+      <p class="sub">Fragen, Kooperationen oder Support? Schreib uns einfach.</p>
+      <p>E-Mail: <a href="mailto:kontakt@rotsch-lorenz.de">kontakt@rotsch-lorenz.de</a></p>
+    </div>
+  </section>
+</main>
+
+<footer id="impressum">
+  <div class="wrap imp">
+    <h2>Impressum</h2>
+    <p class="label">Angaben gemäß &sect; 5 TMG</p>
+    <p>Rotsch &amp; Lorenz GbR<br>Sandheide 28<br>21714 Hammah<br>Deutschland</p>
+    <p class="label">Vertretungsberechtigte Gesellschafter</p>
+    <p>Richard Rotsch, Enzo Lorenz</p>
+    <p class="label">Kontakt</p>
+    <p>E-Mail: kontakt@rotsch-lorenz.de</p>
+    <p class="label">Umsatzsteuer-Identifikationsnummer</p>
+    <p>Umsatzsteuer-Identifikationsnummer gemäß &sect; 27 a Umsatzsteuergesetz:<br>DE449952696</p>
+    <p class="label">Verantwortlich für den Inhalt nach &sect; 18 Abs. 2 MStV</p>
+    <p>Rotsch &amp; Lorenz GbR</p>
+    <p class="fine">&copy; Rotsch &amp; Lorenz GbR. Alle Rechte vorbehalten.</p>
+  </div>
+</footer>
+</body>
+</html>
