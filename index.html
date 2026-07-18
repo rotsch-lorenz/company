@@ -3,242 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rotsch &amp; Lorenz GbR · Software-Studio aus Norddeutschland</title>
+<title>Rotsch &amp; Lorenz GbR &middot; Software-Studio aus Norddeutschland</title>
 <meta name="description" content="Rotsch & Lorenz ist ein kleines Software-Studio aus Hammah. Wir entwerfen, bauen und betreiben digitale Produkte und Web-Tools mit ehrlichem Nutzen, jedes unter eigener Marke.">
+<link rel="canonical" href="https://rotsch-lorenz.de/">
 <meta name="theme-color" content="#efece3">
 <meta property="og:title" content="Rotsch & Lorenz GbR">
 <meta property="og:description" content="Ein kleines Software-Studio aus Norddeutschland. Wir bauen und betreiben digitale Produkte, die halten, was sie versprechen.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1c1f'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23efece3' text-anchor='middle'%3ER%26L%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta property="og:url" content="https://rotsch-lorenz.de/">
+<meta property="og:image" content="https://rotsch-lorenz.de/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script>document.documentElement.classList.add('js')</script>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340..640;1,9..144,340..560&family=Inter:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340..640;1,9..144,340..560&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340..640;1,9..144,340..560&family=Inter:wght@400;500;600&display=swap"></noscript>
-<style>
-  :root{
-    --paper:#efece3; --paper-2:#e8e4d8; --card:#f4f1e9;
-    --ink:#1a1c1f; --ink-soft:#2c2e31; --muted:#6c6a61; --faint:#9a978c;
-    --line:rgba(26,28,31,.14); --line-soft:rgba(26,28,31,.08);
-    --accent:#b6552f; --accent-deep:#8f3f20;
-    --serif:"Fraunces",Georgia,"Times New Roman",serif;
-    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
-    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-    --wrap:1120px;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  body{
-    margin:0;background:var(--paper);color:var(--ink);
-    font-family:var(--sans);line-height:1.65;font-size:17px;
-    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
-    overflow-x:hidden;
-  }
-  /* feine Papierkoernung, sehr zurueckhaltend */
-  body::before{
-    content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.4;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.045'/%3E%3C/svg%3E");
-    mix-blend-mode:multiply;
-  }
-  main,header,footer{position:relative;z-index:1}
-  a{color:inherit;text-decoration:none}
-  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
-  h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;margin:0}
-  em{font-style:italic}
-  .kicker{
-    font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
-    color:var(--accent);font-weight:400;
-  }
-  .idx{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;color:var(--faint)}
-
-  /* ---------- Header ---------- */
-  header{
-    position:sticky;top:0;z-index:20;
-    background:color-mix(in srgb,var(--paper) 82%,transparent);
-    backdrop-filter:saturate(1.1) blur(10px);
-    border-bottom:1px solid var(--line-soft);
-  }
-  .bar{display:flex;align-items:center;justify-content:space-between;height:70px}
-  .mark{display:flex;align-items:baseline;gap:.5ch;font-family:var(--serif);font-size:1.22rem;letter-spacing:-.01em}
-  .mark b{font-weight:500}
-  .mark .amp{color:var(--accent);font-style:italic}
-  .mark .gbr{font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;color:var(--muted);
-    text-transform:uppercase;transform:translateY(-.5ch)}
-  nav.top{display:flex;gap:30px;align-items:center}
-  nav.top a{font-size:.9rem;color:var(--muted);transition:color .2s}
-  nav.top a:hover{color:var(--ink)}
-  nav.top a.pill{
-    color:var(--ink);border:1px solid var(--line);border-radius:100px;padding:8px 16px;
-    transition:background .25s,color .25s,border-color .25s;
-  }
-  nav.top a.pill:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-  @media(max-width:720px){nav.top a:not(.pill){display:none}}
-
-  /* ---------- Hero ---------- */
-  .hero{padding:104px 0 60px}
-  .hero .meta{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin-bottom:34px}
-  .hero .meta .dot{width:5px;height:5px;border-radius:50%;background:var(--accent)}
-  .hero .meta span{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;
-    text-transform:uppercase;color:var(--muted)}
-  h1{font-size:clamp(2.15rem,6.6vw,5.1rem);line-height:1.04}
-  h1 .hl{color:var(--accent);font-style:italic}
-  .hero p.lead{
-    max-width:600px;margin:30px 0 0;color:var(--ink-soft);font-size:clamp(1.05rem,1.6vw,1.28rem);
-    line-height:1.6;
-  }
-  .hero .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:40px}
-  .btn{
-    display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:100px;
-    font-size:.95rem;font-weight:500;transition:transform .2s,background .25s,color .25s,border-color .25s;
-  }
-  .btn .arrow{transition:transform .25s}
-  .btn:hover .arrow{transform:translateX(4px)}
-  .btn-primary{background:var(--ink);color:var(--paper)}
-  .btn-primary:hover{background:var(--accent-deep)}
-  .btn-ghost{border:1px solid var(--line);color:var(--ink)}
-  .btn-ghost:hover{border-color:var(--ink)}
-
-  /* ---------- Marquee ---------- */
-  .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-    padding:20px 0;overflow:hidden;background:var(--paper-2)}
-  .track{display:flex;gap:0;width:max-content;animation:scroll 38s linear infinite}
-  .strip:hover .track{animation-play-state:paused}
-  .track .item{
-    display:flex;align-items:center;gap:26px;padding:0 26px;
-    font-family:var(--serif);font-size:1.15rem;color:var(--ink-soft);white-space:nowrap;
-  }
-  .track .item::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.6}
-  @keyframes scroll{to{transform:translateX(-50%)}}
-  @media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;width:auto}}
-
-  /* ---------- Section shell ---------- */
-  section.blk{padding:96px 0;border-top:1px solid var(--line-soft)}
-  .head{display:flex;align-items:baseline;gap:16px;margin-bottom:14px}
-  .head h2{font-size:clamp(1.9rem,3.4vw,2.9rem);line-height:1.08}
-  .head .idx{transform:translateY(-.2ch)}
-  .intro{max-width:620px;color:var(--muted);font-size:1.08rem;margin:0 0 52px}
-
-  /* ---------- Leistungen (editorial rows) ---------- */
-  .rows{border-top:1px solid var(--line)}
-  .row{
-    display:grid;grid-template-columns:64px 1fr 1.3fr;gap:28px;align-items:start;
-    padding:30px 8px;border-bottom:1px solid var(--line);
-    transition:background .3s,padding .3s;
-  }
-  .row:hover{background:var(--card);padding-left:20px}
-  .row .no{font-family:var(--mono);font-size:.8rem;color:var(--accent);padding-top:6px}
-  .row h3{font-size:1.5rem;line-height:1.2}
-  .row p{margin:0;color:var(--muted);font-size:1rem}
-  @media(max-width:760px){
-    .row{grid-template-columns:44px 1fr;gap:14px}
-    .row p{grid-column:1/-1;padding-left:58px}
-  }
-
-  /* ---------- Arbeitsweise (steps) ---------- */
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
-    border:1px solid var(--line);border-radius:18px;overflow:hidden}
-  .step{background:var(--card);padding:32px 26px;min-height:220px;display:flex;flex-direction:column;
-    transition:background .3s}
-  .step:hover{background:var(--paper)}
-  .step .n{font-family:var(--serif);font-style:italic;font-size:2.2rem;color:var(--accent);line-height:1}
-  .step h3{font-size:1.22rem;margin:20px 0 10px}
-  .step p{margin:0;color:var(--muted);font-size:.96rem}
-  @media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
-  @media(max-width:520px){.steps{grid-template-columns:1fr}}
-
-  /* ---------- Prinzipien ---------- */
-  .creed{display:grid;grid-template-columns:1fr 1fr;gap:0}
-  .cr{padding:38px 34px;border-top:1px solid var(--line)}
-  .cr:nth-child(odd){border-right:1px solid var(--line)}
-  .cr h3{font-size:1.65rem;line-height:1.2}
-  .cr h3 em{color:var(--accent)}
-  .cr p{margin:12px 0 0;color:var(--muted);font-size:1rem;max-width:44ch}
-  @media(max-width:720px){.creed{grid-template-columns:1fr}.cr:nth-child(odd){border-right:none}}
-
-  /* ---------- Marken ---------- */
-  .brands{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
-  .brands .say h3{font-size:clamp(1.7rem,2.8vw,2.4rem);line-height:1.18;max-width:16ch}
-  .brands .say h3 em{color:var(--accent)}
-  .brands .say p{color:var(--muted);margin:22px 0 0;max-width:52ch}
-  .plate{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .tile{aspect-ratio:1.5/1;border:1px solid var(--line);border-radius:16px;background:var(--card);
-    display:flex;align-items:center;justify-content:center;
-    font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);
-    transition:transform .3s,color .3s,border-color .3s}
-  .tile:hover{transform:translateY(-4px);color:var(--accent);border-color:var(--accent)}
-  @media(max-width:760px){.brands{grid-template-columns:1fr;gap:36px}}
-
-  /* ---------- Kontakt-Band ---------- */
-  .cta{background:var(--ink);color:var(--paper);border-radius:24px;padding:64px 48px;
-    display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap;margin:8px 0 96px}
-  .cta h2{font-family:var(--serif);font-size:clamp(1.9rem,3.4vw,2.8rem);color:var(--paper);line-height:1.1;max-width:16ch}
-  .cta h2 em{color:var(--accent)}
-  .cta .r{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
-  .cta a.mailbtn{background:var(--paper);color:var(--ink);padding:15px 28px;border-radius:100px;
-    font-weight:500;transition:transform .2s,background .25s}
-  .cta a.mailbtn:hover{transform:translateY(-2px);background:#fff}
-  .cta small{color:var(--faint);font-family:var(--mono);font-size:.74rem;letter-spacing:.06em}
-
-  /* ---------- Footer ---------- */
-  footer{background:var(--ink);color:#b9b7b0;padding:70px 0 46px;font-size:.9rem}
-  footer a{color:#d8d6cf}
-  footer a:hover{color:#fff;text-decoration:underline}
-  .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:44px;
-    border-bottom:1px solid rgba(255,255,255,.1)}
-  .fgrid .fmark{font-family:var(--serif);font-size:1.4rem;color:var(--paper);margin-bottom:10px}
-  .fgrid .fmark .amp{color:var(--accent);font-style:italic;margin:0 .14em}
-  .fgrid p{margin:.3rem 0;line-height:1.7}
-  .fcol h4{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--faint);margin:0 0 14px;font-weight:400}
-  .fcol .lab{color:#8f8d86;display:block;margin-top:14px;font-size:.82rem}
-  .fbot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:26px;
-    color:#8a877f;font-size:.82rem}
-  @media(max-width:760px){.fgrid{grid-template-columns:1fr;gap:30px}.cta{padding:44px 28px}}
-
-  .reveal{transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
-  .js .reveal{opacity:0;transform:translateY(22px)}
-  .js .reveal.in{opacity:1;transform:none}
-  @media(prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}}
-</style>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
   <div class="wrap bar">
-    <a class="mark" href="#top" aria-label="Rotsch und Lorenz, Startseite">
+    <a class="mark" href="/" aria-label="Rotsch und Lorenz, Startseite">
       <b>Rotsch</b><span class="amp">&amp;</span><b>Lorenz</b><span class="gbr">GbR</span>
     </a>
-    <nav class="top">
-      <a href="#leistungen">Leistungen</a>
-      <a href="#arbeit">Arbeitsweise</a>
-      <a href="#haltung">Haltung</a>
-      <a class="pill" href="#kontakt">Kontakt</a>
+    <nav class="nav-d">
+      <a href="/leistungen.html">Leistungen</a>
+      <a href="/arbeitsweise.html">Arbeitsweise</a>
+      <a href="/haltung.html">Haltung</a>
+      <a class="pill" href="/kontakt.html">Kontakt</a>
     </nav>
+    <button class="burger" aria-label="Men&uuml; &ouml;ffnen" aria-expanded="false" aria-controls="mobilemenu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
+<div class="menu-backdrop" aria-hidden="true"></div>
+<nav class="nav-m" id="mobilemenu" aria-label="Hauptnavigation">
+  <a href="/"><span>Startseite</span><span class="n">01</span></a>
+  <a href="/leistungen.html"><span>Leistungen</span><span class="n">02</span></a>
+  <a href="/arbeitsweise.html"><span>Arbeitsweise</span><span class="n">03</span></a>
+  <a href="/haltung.html"><span>Haltung</span><span class="n">04</span></a>
+  <a href="/kontakt.html"><span>Kontakt</span><span class="n">05</span></a>
+</nav>
 
 <main id="top">
 
-  <!-- HERO -->
   <section class="wrap hero">
     <div class="meta reveal">
       <span>Software-Studio</span><i class="dot"></i>
       <span>Hammah, Niedersachsen</span><i class="dot"></i>
       <span>Zwei Gr&uuml;nder</span>
     </div>
-    <h1 class="reveal">Wir bauen und betreiben<br>digitale Produkte, die <span class="hl">halten,<br>was sie versprechen.</span></h1>
+    <h1 class="reveal">Wir bauen und betreiben <br>digitale Produkte, die <span class="hl">halten, <br>was sie versprechen.</span></h1>
     <p class="lead reveal">Rotsch &amp; Lorenz ist ein kleines Studio aus Norddeutschland. Wir entwerfen Web-Tools und
       digitale Produkte, geben jedem eine eigene Marke und einen ehrlichen Nutzen, und betreiben sie danach selbst weiter.</p>
     <div class="actions reveal">
-      <a class="btn btn-primary" href="#kontakt">Projekt besprechen <span class="arrow">&rarr;</span></a>
-      <a class="btn btn-ghost" href="#leistungen">Was wir machen</a>
+      <a class="btn btn-primary" href="/kontakt.html">Projekt besprechen <span class="arrow">&rarr;</span></a>
+      <a class="btn btn-ghost" href="/leistungen.html">Was wir machen</a>
     </div>
   </section>
 
-  <!-- MARQUEE -->
   <div class="strip" aria-hidden="true">
     <div class="track">
       <div class="item">Web-Anwendungen</div><div class="item">Digitale Produkte</div>
@@ -252,82 +80,34 @@
     </div>
   </div>
 
-  <!-- LEISTUNGEN -->
-  <section class="blk" id="leistungen">
+  <section class="blk">
     <div class="wrap">
-      <div class="head reveal"><span class="idx">01</span><h2>Was wir machen</h2></div>
-      <p class="intro reveal">Wir entwerfen, bauen und pflegen digitale Software-Produkte. Von der ersten Idee
-        bis zum laufenden Betrieb, alles aus einer Hand und von zwei Leuten, die jedes Detail kennen.</p>
-      <div class="rows">
-        <div class="row reveal">
-          <div class="no">01</div>
-          <h3>Web-Tools &amp; Anwendungen</h3>
-          <p>Praktische Werkzeuge f&uuml;r konkrete Aufgaben. Schnell, zuverl&auml;ssig und auf das Wesentliche reduziert,
-            statt aufgeblasen mit Funktionen, die niemand nutzt.</p>
-        </div>
-        <div class="row reveal">
-          <div class="no">02</div>
-          <h3>Digitale Produkte</h3>
-          <p>Software und digitale G&uuml;ter mit klarem Nutzen. Als Einmalkauf oder im Abo, mit sofortigem Zugang
-            und ohne versteckte Bedingungen.</p>
-        </div>
-        <div class="row reveal">
-          <div class="no">03</div>
-          <h3>Eigene Marken</h3>
-          <p>Jedes Produkt steht f&uuml;r sich. Eigene Marke, eigene Seite, eigenes Angebot. Ehrlich formuliert,
-            ohne leere Versprechen und ohne kleingedrucktes Kalk&uuml;l.</p>
-        </div>
-        <div class="row reveal">
-          <div class="no">04</div>
-          <h3>Betrieb &amp; Pflege</h3>
-          <p>Nach dem Start h&ouml;rt die Arbeit nicht auf. Hosting, Updates, Support und laufende Verbesserung
-            geh&ouml;ren f&uuml;r uns zum Produkt dazu.</p>
-        </div>
+      <div class="head reveal"><span class="idx">&Uuml;bersicht</span><h2>Kurz gesagt</h2></div>
+      <p class="intro reveal">Drei Dinge machen aus, wie wir arbeiten. Auf den einzelnen Seiten steht,
+        was das konkret bedeutet.</p>
+      <div class="tease">
+        <a class="tcard reveal" href="/leistungen.html">
+          <span class="idx">01</span><h3>Leistungen</h3>
+          <p>Web-Tools, digitale Produkte, eigene Marken und der laufende Betrieb. Von der Idee bis zum Support, alles aus einer Hand.</p>
+          <span class="go">Mehr lesen <span class="arrow">&rarr;</span></span>
+        </a>
+        <a class="tcard reveal" href="/arbeitsweise.html">
+          <span class="idx">02</span><h3>Arbeitsweise</h3>
+          <p>Ein einfacher, ehrlicher Ablauf: verstehen, bauen, ehrlich starten, verbessern. Ohne Versprechen, die wir nicht halten k&ouml;nnen.</p>
+          <span class="go">Mehr lesen <span class="arrow">&rarr;</span></span>
+        </a>
+        <a class="tcard reveal" href="/haltung.html">
+          <span class="idx">03</span><h3>Haltung</h3>
+          <p>Ehrlichkeit vor Hype, Nutzen vor Funktionsliste, Datenschutz von Anfang an. Woran sich jedes Produkt messen lassen muss.</p>
+          <span class="go">Mehr lesen <span class="arrow">&rarr;</span></span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ARBEITSWEISE -->
-  <section class="blk" id="arbeit">
-    <div class="wrap">
-      <div class="head reveal"><span class="idx">02</span><h2>So arbeiten wir</h2></div>
-      <p class="intro reveal">Ein einfacher, ehrlicher Ablauf. Wir versprechen nichts, was wir nicht bauen k&ouml;nnen,
-        und starten nichts, was wir nicht selbst benutzen w&uuml;rden.</p>
-      <div class="steps">
-        <div class="step reveal"><div class="n">01</div><h3>Verstehen</h3>
-          <p>Wir schauen uns ein echtes Problem an, bevor wir eine Zeile Code schreiben.</p></div>
-        <div class="step reveal"><div class="n">02</div><h3>Bauen</h3>
-          <p>Schlank und schnell, mit Fokus auf das, was tats&auml;chlich einen Unterschied macht.</p></div>
-        <div class="step reveal"><div class="n">03</div><h3>Ehrlich starten</h3>
-          <p>Kein Fake-Countdown, keine erfundenen Rabatte. Ein klares Angebot, das f&uuml;r sich spricht.</p></div>
-        <div class="step reveal"><div class="n">04</div><h3>Verbessern</h3>
-          <p>Wir messen, lernen und pflegen weiter. Ein Produkt ist mit dem Start nicht fertig.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HALTUNG -->
-  <section class="blk" id="haltung">
-    <div class="wrap">
-      <div class="head reveal"><span class="idx">03</span><h2>Woran wir glauben</h2></div>
-      <p class="intro reveal">Vier Grunds&auml;tze, an denen sich jedes Produkt messen lassen muss, das unseren Namen tr&auml;gt.</p>
-      <div class="creed">
-        <div class="cr reveal"><h3>Ehrlichkeit vor <em>Hype</em></h3>
-          <p>Wir verkaufen keinen Druck. Was ein Produkt kann und was es kostet, steht klar da, ohne dunkle Muster.</p></div>
-        <div class="cr reveal"><h3>Nutzen vor <em>Funktionsliste</em></h3>
-          <p>Ein Werkzeug wird an dem gemessen, was es l&ouml;st, nicht an der L&auml;nge seiner Feature-Aufz&auml;hlung.</p></div>
-        <div class="cr reveal"><h3>Datenschutz ist kein <em>Nachgedanke</em></h3>
-          <p>So wenig Daten wie n&ouml;tig, Einwilligung zuerst, Reichweitenmessung ohne Cookies. Von Anfang an mitgedacht.</p></div>
-        <div class="cr reveal"><h3>Klein, aber <em>gr&uuml;ndlich</em></h3>
-          <p>Zwei Gr&uuml;nder, kurze Wege, echte Antworten. Was wir bauen, k&ouml;nnen wir auch verantworten.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MARKEN -->
   <section class="blk" id="marken">
     <div class="wrap">
-      <div class="head reveal"><span class="idx">04</span><h2>Eigene Marken</h2></div>
+      <div class="head reveal"><span class="idx">Marken</span><h2>Eigene Marken</h2></div>
       <div class="brands">
         <div class="say reveal">
           <h3>Wir bauen Produkte unter <em>eigenen Marken</em> auf.</h3>
@@ -342,12 +122,11 @@
     </div>
   </section>
 
-  <!-- KONTAKT -->
-  <section class="wrap" id="kontakt">
+  <section class="wrap">
     <div class="cta reveal">
       <h2>Eine Idee, ein Projekt oder <em>eine Frage?</em></h2>
       <div class="r">
-        <a class="mailbtn" href="mailto:rotsch-lorenz@web.de">rotsch-lorenz@web.de</a>
+        <a class="mailbtn" href="/kontakt.html">Kontakt aufnehmen</a>
         <small>Kleines Team. Wir antworten selbst.</small>
       </div>
     </div>
@@ -355,14 +134,18 @@
 
 </main>
 
-<footer id="impressum">
+<footer>
   <div class="wrap">
     <div class="fgrid">
       <div class="fcol">
         <div class="fmark">Rotsch<span class="amp">&amp;</span>Lorenz</div>
         <p>Ein kleines Software-Studio aus Hammah in Niedersachsen. Wir bauen und betreiben digitale
           Produkte mit ehrlichem Nutzen.</p>
-        <p><a href="mailto:rotsch-lorenz@web.de">rotsch-lorenz@web.de</a></p>
+        <nav class="fnav" aria-label="Fu&szlig;navigation">
+          <a href="/">Startseite</a><a href="/leistungen.html">Leistungen</a>
+          <a href="/arbeitsweise.html">Arbeitsweise</a><a href="/haltung.html">Haltung</a>
+          <a href="/kontakt.html">Kontakt</a>
+        </nav>
       </div>
       <div class="fcol">
         <h4>Impressum</h4>
@@ -376,6 +159,8 @@
         <p>gem&auml;&szlig; &sect; 27 a UStG:<br>DE449952696</p>
         <span class="lab">Verantwortlich nach &sect; 18 Abs. 2 MStV</span>
         <p>Rotsch &amp; Lorenz GbR</p>
+        <span class="lab">Kontakt</span>
+        <p><a href="mailto:rotsch-lorenz@web.de">rotsch-lorenz@web.de</a></p>
       </div>
     </div>
     <div class="fbot">
@@ -385,41 +170,6 @@
   </div>
 </footer>
 
-<script>
-  (function(){
-    var els=[].slice.call(document.querySelectorAll('.reveal'));
-    if(!els.length) return;
-    if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion:reduce)').matches){
-      els.forEach(function(e){e.classList.add('in')});return;
-    }
-    // sanftes Staffeln benachbarter Elemente in derselben Gruppe
-    var groups={};
-    els.forEach(function(e){
-      var p=e.parentElement;var k=p?(p.className||'root'):'root';
-      groups[k]=(groups[k]||0);
-      e.dataset.d=Math.min(groups[k]*70,280);groups[k]++;
-    });
-    var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if(en.isIntersecting){
-          var el=en.target;
-          setTimeout(function(){el.classList.add('in')},+el.dataset.d||0);
-          io.unobserve(el);
-        }
-      });
-    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
-    els.forEach(function(e){io.observe(e)});
-    // Failsafe: was beim Laden schon sichtbar ist, sofort zeigen (kein leerer Hero,
-    // falls der Observer-Callback verzoegert). Der Rest kommt beim Scrollen.
-    requestAnimationFrame(function(){
-      var h=window.innerHeight||document.documentElement.clientHeight;
-      els.forEach(function(e){
-        if(!e.classList.contains('in')&&e.getBoundingClientRect().top<h*0.92){
-          e.classList.add('in');io.unobserve(e);
-        }
-      });
-    });
-  })();
-</script>
+<script src="app.js" defer></script>
 </body>
 </html>
