@@ -36,7 +36,7 @@ em{font-style:italic}
 /* ---------- Header + Navigation ---------- */
 header{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--paper) 84%,transparent);
   backdrop-filter:saturate(1.1) blur(10px);border-bottom:1px solid var(--line-soft)}
-.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px;position:relative}
 .mark{display:flex;align-items:baseline;gap:.5ch;font-family:var(--serif);font-size:1.2rem;letter-spacing:-.01em;white-space:nowrap}
 .mark b{font-weight:500}
 .mark .amp{color:var(--accent);font-style:normal}
@@ -73,7 +73,9 @@ body.menu-open .nav-m{opacity:1;transform:none;pointer-events:auto}
 body.menu-open .menu-backdrop{opacity:1;pointer-events:auto}
 
 /* ---------- Hero (Startseite) ---------- */
-.hero{padding:96px 0 60px}
+/* nur vertikal: horizontales Padding kommt von .wrap (--pad). Sonst wuerde die padding-Kurzform
+   das .wrap-Padding ueberschreiben und der Hero klebte am Bildschirmrand (Mobil). */
+.hero{padding-top:96px;padding-bottom:60px}
 .hero .meta{display:flex;gap:14px 18px;flex-wrap:wrap;align-items:center;margin-bottom:30px}
 .hero .meta .dot{width:5px;height:5px;border-radius:50%;background:var(--accent)}
 .hero .meta span{font-family:var(--mono);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
@@ -91,7 +93,7 @@ h1 .hl{color:var(--accent);font-style:italic}
 .btn-ghost:hover{border-color:var(--ink)}
 
 /* ---------- Sub-Page Hero ---------- */
-.phero{padding:72px 0 8px}
+.phero{padding-top:72px;padding-bottom:8px}
 .phero .idx{display:block;margin-bottom:16px}
 .phero h1{font-size:clamp(2.2rem,5.4vw,4.2rem);line-height:1.06}
 .phero h1 em{color:var(--accent)}
@@ -224,11 +226,15 @@ footer a:hover{color:#fff;text-decoration:underline}
 /* ---------- Mobile-Feinschliff ---------- */
 @media(max-width:760px){
   .nav-d{display:none}
-  .burger{display:flex}
-  .hero{padding:60px 0 44px}
+  /* Burger LINKS (Daumen-freundlich), Wortmarke mittig, GbR-Kuerzel raus aus der Leiste */
+  .bar{justify-content:center}
+  .burger{display:flex;position:absolute;left:var(--pad);top:50%;transform:translateY(-50%)}
+  .mark{gap:.4ch}
+  .mark .gbr{display:none}
+  .hero{padding-top:60px;padding-bottom:44px}
   .hero .meta{margin-bottom:22px;gap:10px 14px}
   .hero h1 br{display:none}
-  .phero{padding:52px 0 4px}
+  .phero{padding-top:52px;padding-bottom:4px}
   .phero h1 br{display:none}
   section.blk{padding:64px 0}
   .cta{flex-direction:column;align-items:flex-start;gap:24px}
