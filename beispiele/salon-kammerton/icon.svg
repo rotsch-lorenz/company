@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Ein Kamm, Petrol auf Weiß. Dieselben Zinken wie die Kammlinie der Seite. -->
+  <rect width="32" height="32" rx="7" fill="#235f66"/>
+  <rect x="6" y="8" width="20" height="4.2" rx="1" fill="#fff"/>
+  <g fill="#fff">
+    <rect x="6.6" y="11" width="1.8" height="12.5" rx=".6"/>
+    <rect x="10.4" y="11" width="1.8" height="12.5" rx=".6"/>
+    <rect x="14.2" y="11" width="1.8" height="12.5" rx=".6"/>
+    <rect x="18" y="11" width="1.8" height="10" rx=".6"/>
+    <rect x="21.8" y="11" width="1.8" height="10" rx=".6"/>
+  </g>
+</svg>

@@ -1,0 +1,176 @@
+{
+ "uhr": "2026-10-06T11:40:00+02:00",
+ "gemessen": "2026-10-03T20:40:08+02:00",
+ "demos": {
+  "restaurant-rundling": {
+   "erstes_datum_css": 683,
+   "datum_text": "6. Oktober",
+   "restaurant-rundling-lang.webp": null,
+   "restaurant-rundling-schirm.webp": [
+    600,
+    1022
+   ],
+   "url": "https://rotsch-lorenz.github.io/kundenseiten/restaurant-rundling/",
+   "status": 200,
+   "titel": "Restaurant Rundling · Mittagstisch und Garten in Hannover-Kleefeld",
+   "beschreibung": "Restaurant mit Garten in Hannover-Kleefeld: Mittagstisch Dienstag bis Freitag, abends Küche aus der Region und vom Mittelmeer. Musterseite von Lorenz & Rotsch.",
+   "h1": [
+    "Mittags schnell, abends in Ruhe."
+   ],
+   "robots": "noindex, nofollow, nocache"
+  },
+  "restaurant-vorschau-beispiel": {
+   "erstes_datum_css": 683,
+   "datum_text": "6. Oktober",
+   "restaurant-vorschau-beispiel-lang.webp": null,
+   "restaurant-vorschau-beispiel-schirm.webp": [
+    600,
+    1022
+   ],
+   "url": "https://rotsch-lorenz.github.io/kundenseiten/restaurant-vorschau-beispiel/",
+   "status": 200,
+   "titel": "Gasthaus Kranichwiese · Mittagstisch und Biergarten in Hannover",
+   "beschreibung": "Gasthaus mit Biergarten in Hannover: Mittagstisch Dienstag bis Freitag, Küche nach der Saison, ein Saal für Feiern. Vorschau-Beispiel von Lorenz & Rotsch.",
+   "h1": [
+    "Bei uns kocht die Chefin selbst."
+   ],
+   "robots": "noindex, nofollow, nocache"
+  },
+  "cafe-fensterbank": {
+   "erstes_datum_css": 5619,
+   "datum_text": "6. Oktober",
+   "cafe-fensterbank-lang.webp": [
+    600,
+    4597
+   ],
+   "cafe-fensterbank-schirm.webp": [
+    600,
+    1022
+   ],
+   "url": "https://rotsch-lorenz.github.io/kundenseiten/cafe-fensterbank/",
+   "status": 200,
+   "titel": "Café Fensterbank · Frühstück und Kaffee in Hannover-Linden",
+   "beschreibung": "Café in Linden-Nord. Kaffee, Frühstück den ganzen Tag und Kuchen aus dem eigenen Ofen. Musterseite von Lorenz & Rotsch.",
+   "h1": [
+    "Frühstück, bis es dunkel wird."
+   ],
+   "robots": "noindex, nofollow, nocache",
+   "cafe-fensterbank-rechner-1000.webp": [
+    1000,
+    625
+   ],
+   "cafe-fensterbank-rechner-1600.webp": [
+    1600,
+    1000
+   ],
+   "cafe-fensterbank-rechner-2400.webp": [
+    2400,
+    1500
+   ]
+  },
+  "salon-kammerton": {
+   "erstes_datum_css": 11584,
+   "datum_text": "Beginn 1. August 2027, drei Jahre",
+   "salon-kammerton-lang.webp": [
+    600,
+    4597
+   ],
+   "salon-kammerton-schirm.webp": [
+    600,
+    1022
+   ],
+   "url": "https://rotsch-lorenz.github.io/kundenseiten/salon-kammerton/",
+   "status": 200,
+   "titel": "Salon Kammerton · Friseur und Barbier in Hannover-Südstadt",
+   "beschreibung": "Friseur und Barbier in der Hannoveraner Südstadt. Damen, Herren, Bart und Farbe, Preise vorher. Musterseite von Lorenz & Rotsch.",
+   "h1": [
+    "Erst zuhören, dann schneiden."
+   ],
+   "robots": "noindex, nofollow, nocache",
+   "salon-kammerton-rechner-1000.webp": [
+    1000,
+    625
+   ],
+   "salon-kammerton-rechner-1600.webp": [
+    1600,
+    1000
+   ],
+   "salon-kammerton-rechner-2400.webp": [
+    2400,
+    1500
+   ]
+  },
+  "studio-lunula": {
+   "erstes_datum_css": null,
+   "datum_text": null,
+   "studio-lunula-lang.webp": [
+    600,
+    4597
+   ],
+   "studio-lunula-schirm.webp": [
+    600,
+    1022
+   ],
+   "url": "https://rotsch-lorenz.github.io/kundenseiten/studio-lunula/",
+   "status": 200,
+   "titel": "Studio Lunula · Nagelstudio und Kosmetik in Hannover-List",
+   "beschreibung": "Nagelstudio und Kosmetik in Hannover-List: Maniküre, Gel, Pediküre, Gesicht, Brauen und Wimpern. Preise vorher, Termin per Anfrage oder Anruf. Musterseite von Lorenz & Rotsch.",
+   "h1": [
+    "Gepflegte Nägel, nicht gehetzt."
+   ],
+   "robots": "noindex, nofollow, nocache"
+  },
+  "werkstatt-klarsicht": {
+   "erstes_datum_css": null,
+   "datum_text": null,
+   "werkstatt-klarsicht-lang.webp": [
+    600,
+    4597
+   ],
+   "werkstatt-klarsicht-schirm.webp": [
+    600,
+    1022
+   ],
+   "url": "https://rotsch-lorenz.github.io/kundenseiten/werkstatt-klarsicht/",
+   "status": 200,
+   "titel": "Werkstatt Klarsicht · Kfz-Meisterbetrieb in Hannover-Vahrenwald",
+   "beschreibung": "Kfz-Meisterbetrieb für alle Marken in Hannover-Vahrenwald: Inspektion, Hauptuntersuchung, Bremsen, Reifen und Klimaservice. Sie bekommen den Befund, bevor wir schrauben. Musterseite von Lorenz & Rotsch.",
+   "h1": [
+    "Erst der Befund. Dann der Preis."
+   ],
+   "robots": "noindex, nofollow, nocache",
+   "werkstatt-klarsicht-rechner-1000.webp": [
+    1000,
+    625
+   ],
+   "werkstatt-klarsicht-rechner-1600.webp": [
+    1600,
+    1000
+   ],
+   "werkstatt-klarsicht-rechner-2400.webp": [
+    2400,
+    1500
+   ]
+  },
+  "haustechnik-heizkurve": {
+   "erstes_datum_css": 3861,
+   "datum_text": "Die Grenze von 55 Grad nennt die Verbraucherzentrale („Wärmepumpe im Eigenheim“,",
+   "haustechnik-heizkurve-lang.webp": [
+    600,
+    4597
+   ],
+   "haustechnik-heizkurve-schirm.webp": [
+    600,
+    1022
+   ],
+   "url": "https://rotsch-lorenz.github.io/kundenseiten/haustechnik-heizkurve/",
+   "status": 200,
+   "titel": "Heizkurve Haustechnik · Sanitär und Heizung in Hannover-Ricklingen",
+   "beschreibung": "Meisterbetrieb für Sanitär und Heizung in Hannover-Ricklingen: Wärmepumpe, Heizungstausch, Wartung, Bad und Notdienst. Bevor wir eine Wärmepumpe anbieten, prüfen wir, ob Ihr Haus mit 55 Grad warm wird. Musterseite von Lorenz & Rotsch.",
+   "h1": [
+    "Erst messen. Dann tauschen."
+   ],
+   "robots": "noindex, nofollow, nocache"
+  }
+ }
+}

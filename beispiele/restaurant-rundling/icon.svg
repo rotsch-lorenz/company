@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Ein Rundling von oben: acht Häuser im Kreis um den runden Platz in der Mitte. -->
+  <circle cx="32" cy="32" r="31" fill="#1a563a"/>
+  <circle cx="32" cy="32" r="7" fill="#f6f1e6"/>
+  <g fill="#f6f1e6">
+    <path d="M28 8h8v7l-4 3-4-3z"/>
+    <path d="M28 8h8v7l-4 3-4-3z" transform="rotate(45 32 32)"/>
+    <path d="M28 8h8v7l-4 3-4-3z" transform="rotate(90 32 32)"/>
+    <path d="M28 8h8v7l-4 3-4-3z" transform="rotate(135 32 32)"/>
+    <path d="M28 8h8v7l-4 3-4-3z" transform="rotate(180 32 32)"/>
+    <path d="M28 8h8v7l-4 3-4-3z" transform="rotate(225 32 32)"/>
+    <path d="M28 8h8v7l-4 3-4-3z" transform="rotate(270 32 32)"/>
+    <path d="M28 8h8v7l-4 3-4-3z" transform="rotate(315 32 32)"/>
+  </g>
+</svg>

@@ -1,4 +1,10 @@
-User-agent: *
+User-Agent: *
+Allow: /
+
+User-Agent: GPTBot
+User-Agent: PerplexityBot
+User-Agent: ClaudeBot
+User-Agent: Google-Extended
 Allow: /
 
 Sitemap: https://rotsch-lorenz.de/sitemap.xml
