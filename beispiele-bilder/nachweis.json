@@ -1,6 +1,6 @@
 {
  "uhr": "2026-10-06T11:40:00+02:00",
- "gemessen": "2026-10-03T20:40:08+02:00",
+ "gemessen": "2026-10-04T15:58:01+02:00",
  "demos": {
   "restaurant-rundling": {
    "erstes_datum_css": 683,
@@ -153,7 +153,7 @@
    ]
   },
   "haustechnik-heizkurve": {
-   "erstes_datum_css": 3861,
+   "erstes_datum_css": 3892,
    "datum_text": "Die Grenze von 55 Grad nennt die Verbraucherzentrale („Wärmepumpe im Eigenheim“,",
    "haustechnik-heizkurve-lang.webp": [
     600,
@@ -168,7 +168,7 @@
    "titel": "Heizkurve Haustechnik · Sanitär und Heizung in Hannover-Ricklingen",
    "beschreibung": "Meisterbetrieb für Sanitär und Heizung in Hannover-Ricklingen: Wärmepumpe, Heizungstausch, Wartung, Bad und Notdienst. Bevor wir eine Wärmepumpe anbieten, prüfen wir, ob Ihr Haus mit 55 Grad warm wird. Musterseite von Lorenz & Rotsch.",
    "h1": [
-    "Erst messen. Dann tauschen."
+    "Wird Ihr Haus mit 55 Grad warm?"
    ],
    "robots": "noindex, nofollow, nocache"
   }
