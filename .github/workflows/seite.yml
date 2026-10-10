@@ -1,0 +1,41 @@
+# Auslieferung der Seite auf GitHub Pages (10.10.2026, Terminal ci, Startauftrag 131).
+#
+# Vorher baute GitHub die Seite selbst aus dem Zweig main („Deploy from a branch“): je Push drei Jobs (build, deploy,
+# report-build-status), jeder auf eine volle Minute aufgerundet. Im Oktober waren das bis zum 10. schon über 500 Minuten
+# des Team-Kontingents für diese beiden Seiten. Jetzt ein Job, eine Minute je Push.
+#
+# Ausgeliefert wird derselbe Inhalt wie vorher: der ganze Zweig main, ohne .git und .github. Kommen mehrere Pushes kurz
+# hintereinander, wartet höchstens einer, und der trägt den neuesten Stand.
+#
+# Rückweg: Pages wieder auf den Zweig stellen und diese Datei löschen.
+#   gh api -X PUT repos/rotsch-lorenz/<repo>/pages -f build_type=legacy -f 'source[branch]=main' -f 'source[path]=/'
+name: Seite ausliefern
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  ausliefern:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: pages
+        uses: actions/deploy-pages@v4
